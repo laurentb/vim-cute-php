@@ -1,5 +1,4 @@
-" we need the conceal feature (vim ≥ 7.3)
-if !has('conceal')
+if exists('g:no_php_conceal') || !has('conceal') || &enc != 'utf-8'
     finish
 endif
 
