@@ -2,11 +2,6 @@ if exists('g:no_php_conceal') || !has('conceal') || &enc != 'utf-8'
     finish
 endif
 
-" remove the keywords. we'll re-add them below
-syntax clear phpOperator
-
-syntax keyword phpOperator is
-
 syntax match phpNiceOperator "||" conceal cchar=∨ contained containedin=phpRegion
 syntax match phpNiceOperator "&&" conceal cchar=∧ contained containedin=phpRegion
 syntax match phpNiceOperator "!" conceal cchar=¬ contained containedin=phpRegion
@@ -17,7 +12,7 @@ syntax match phpNiceOperator "===" conceal cchar=≡ contained containedin=phpRe
 syntax match phpNiceOperator "::" conceal cchar=∷ contained containedin=phpRegion
 syntax match phpNiceOperator "!=" conceal cchar=≠ contained containedin=phpRegion
 syntax match phpNiceRelation "=>" conceal cchar=⇛ contained containedin=phpRegion
-syntax match phpNiceMemberSelector "->" conceal cchar=→ contained containedin=phpRegion
+syntax match phpNiceMemberSelector "\->" conceal cchar=→ contained containedin=phpRegion
 
 hi link phpNiceOperator phpOperator
 hi link phpNiceStatement phpStatement
