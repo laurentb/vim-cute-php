@@ -11,6 +11,7 @@ syntax match phpNiceOperator "==" conceal cchar=≈ contained containedin=phpReg
 syntax match phpNiceOperator "===" conceal cchar=≡ contained containedin=phpRegion
 syntax match phpNiceOperator "::" conceal cchar=∷ contained containedin=phpRegion
 syntax match phpNiceOperator "!=" conceal cchar=≠ contained containedin=phpRegion
+syntax match phpNiceOperator "!==" conceal cchar=≢ contained containedin=phpRegion
 syntax match phpNiceRelation "=>" conceal cchar=⇛ contained containedin=phpRegion
 syntax match phpNiceMemberSelector "\->" conceal cchar=→ contained containedin=phpRegion
 
