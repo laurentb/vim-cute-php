@@ -21,5 +21,3 @@ hi link phpNiceKeyword phpKeyword
 hi link phpNiceRelation phpRelation
 hi link phpNiceMemberSelector phpMemberSelector
 hi! link Conceal phpOperator
-
-setlocal conceallevel=2
